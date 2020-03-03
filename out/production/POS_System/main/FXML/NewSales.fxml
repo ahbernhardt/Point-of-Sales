@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="850.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.NewSalesController">
+   <children>
+      <Pane layoutX="100.0" layoutY="210.0" prefHeight="630.0" prefWidth="461.0" style="-fx-background-color: FCD892 FCD892;">
+         <children>
+            <TextArea fx:id="Receipt" layoutX="14.0" layoutY="12.0" prefHeight="607.0" prefWidth="433.0">
+               <font>
+                  <Font size="18.0" />
+               </font></TextArea>
+         </children>
+      </Pane>
+      <Pane layoutX="575.0" layoutY="210.0" prefHeight="630.0" prefWidth="714.0" style="-fx-background-color: FCD892 FCD892;">
+         <children>
+            <GridPane hgap="10.0" layoutX="309.0" layoutY="39.0" prefHeight="287.0" prefWidth="382.0" vgap="10.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="168.80657958984375" minWidth="10.0" prefWidth="150.6839599609375" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="180.6737060546875" minWidth="10.0" prefWidth="147.8160400390625" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="180.6737060546875" minWidth="10.0" prefWidth="147.8160400390625" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="AppleButton" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" onAction="#applebutton" prefHeight="73.0" prefWidth="117.0" stylesheets="@../res/styles/homescreen.css" text="Apple" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="OrangeButton" alignment="CENTER" contentDisplay="TOP" graphicTextGap="5.0" mnemonicParsing="false" onAction="#orangebutton" prefHeight="79.0" prefWidth="117.0" stylesheets="@../res/styles/homescreen.css" text="Orange" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="BannaButton" alignment="CENTER" contentDisplay="TOP" graphicTextGap="5.0" mnemonicParsing="false" onAction="#bananabutton" prefHeight="79.0" prefWidth="117.0" stylesheets="@../res/styles/homescreen.css" text="Banana" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="GrapeButton" alignment="CENTER" contentDisplay="TOP" graphicTextGap="5.0" mnemonicParsing="false" onAction="#grapebutton" prefHeight="79.0" prefWidth="117.0" stylesheets="@../res/styles/homescreen.css" text="Grape" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="StrawBerryButton" alignment="CENTER" contentDisplay="TOP" graphicTextGap="5.0" mnemonicParsing="false" onAction="#strawberrybutton" prefHeight="79.0" prefWidth="117.0" stylesheets="@../res/styles/homescreen.css" text="Strawberry" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="BlueBerryButton" alignment="CENTER" contentDisplay="TOP" graphicTextGap="5.0" mnemonicParsing="false" onAction="#blueberrybutton" prefHeight="79.0" prefWidth="117.0" stylesheets="@../res/styles/homescreen.css" text="Blueberry" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="PearButton" alignment="CENTER" contentDisplay="TOP" graphicTextGap="5.0" mnemonicParsing="false" onAction="#pearbutton" prefHeight="79.0" prefWidth="117.0" stylesheets="@../res/styles/homescreen.css" text="Pear" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="BaconButton" alignment="CENTER" contentDisplay="TOP" graphicTextGap="5.0" mnemonicParsing="false" onAction="#baconbutton" prefHeight="79.0" prefWidth="117.0" stylesheets="@../res/styles/homescreen.css" text="Bacon" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="LettuceButton" alignment="CENTER" contentDisplay="TOP" graphicTextGap="5.0" mnemonicParsing="false" onAction="#lettucebutton" prefHeight="79.0" prefWidth="117.0" stylesheets="@../res/styles/homescreen.css" text="Lettuce" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </GridPane>
+            <HBox alignment="CENTER" layoutX="3.0" layoutY="220.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="76.0" prefWidth="299.0" spacing="10.0" styleClass="left-hbox-buttons">
+               <children>
+                  <Button fx:id="TotalButton" alignment="CENTER" minWidth="-Infinity" mnemonicParsing="false" onAction="#getTotal" prefHeight="31.0" prefWidth="80.0" stylesheets="@../res/styles/homescreen.css" text="TOTAL" HBox.hgrow="ALWAYS" />
+                  <Button fx:id="resetButton" alignment="CENTER" minWidth="-Infinity" mnemonicParsing="false" onAction="#resetbutton" prefHeight="31.0" prefWidth="80.0" stylesheets="@../res/styles/homescreen.css" text="RESET" HBox.hgrow="ALWAYS" />
+                  <Button fx:id="cancelbutton" alignment="CENTER" minWidth="-Infinity" mnemonicParsing="false" prefHeight="31.0" prefWidth="80.0" stylesheets="@../res/styles/homescreen.css" text="CANCEL" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <GridPane alignment="TOP_CENTER" layoutX="12.0" layoutY="49.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="164.0" prefWidth="259.0" styleClass="right-grid">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="111.0" minWidth="100.0" prefWidth="111.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="135.0" minWidth="124.0" prefWidth="124.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label minHeight="-Infinity" prefHeight="25.0" prefWidth="101.0" text="SUB-TOTAL" GridPane.halignment="RIGHT">
+                     <GridPane.margin>
+                        <Insets right="5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label minHeight="-Infinity" prefHeight="25.0" prefWidth="42.0" text="TAX" textAlignment="CENTER" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets right="5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label minHeight="-Infinity" prefHeight="25.0" text="TOTAL" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets right="5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="subTotalField" alignment="CENTER_RIGHT" editable="false" minHeight="-Infinity" minWidth="-Infinity" onAction="#getTotal" prefHeight="40.0" prefWidth="120.0" text="0.00" GridPane.columnIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="taxField" alignment="CENTER_RIGHT" editable="false" minHeight="-Infinity" minWidth="-Infinity" onAction="#getTotal" prefHeight="40.0" prefWidth="120.0" text="0.00" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="netPayableField" alignment="CENTER_RIGHT" editable="false" minHeight="-Infinity" minWidth="-Infinity" onAction="#getTotal" prefHeight="40.0" prefWidth="127.0" text="0.00" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </GridPane>
+            <GridPane hgap="7.0" layoutX="351.0" layoutY="356.0" prefHeight="236.0" prefWidth="330.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="99.3759765625" minWidth="10.0" prefWidth="73.9305419921875" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="102.94366455078125" minWidth="10.0" prefWidth="68.70135498046875" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="130.19427490234375" minWidth="10.0" prefWidth="86.29864501953125" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="152.96502685546875" minWidth="10.0" prefWidth="82.32647705078125" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <CheckBox fx:id="Applecheck" disable="true" mnemonicParsing="false" onAction="#applebutton" text="Apple" />
+                  <CheckBox fx:id="orangecheck" disable="true" mnemonicParsing="false" onAction="#orangebutton" text="Orange" GridPane.rowIndex="1" />
+                  <CheckBox fx:id="bananacheck" disable="true" mnemonicParsing="false" onAction="#bananabutton" text="Banana" GridPane.rowIndex="2" />
+                  <CheckBox fx:id="grapecheck" disable="true" mnemonicParsing="false" onAction="#grapebutton" text="Grape" GridPane.rowIndex="3" />
+                  <CheckBox fx:id="baconcheck" disable="true" mnemonicParsing="false" onAction="#baconbutton" text="Bacon" GridPane.rowIndex="4" />
+                  <CheckBox fx:id="strawberrycheck" alignment="TOP_RIGHT" disable="true" mnemonicParsing="false" onAction="#strawberrybutton" text="Strawberry" GridPane.columnIndex="2" />
+                  <CheckBox fx:id="blueberrycheck" alignment="TOP_RIGHT" disable="true" mnemonicParsing="false" onAction="#blueberrybutton" prefHeight="18.0" prefWidth="76.0" text="Blueberry" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <CheckBox fx:id="pearcheck" alignment="TOP_RIGHT" disable="true" mnemonicParsing="false" onAction="#pearbutton" text="Pear" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <CheckBox fx:id="lettucecheck" alignment="TOP_RIGHT" disable="true" mnemonicParsing="false" onAction="#lettucebutton" text="Lettuce" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <TextField fx:id="appletextfield" onAction="#applebutton" prefHeight="27.0" prefWidth="79.0" text="0" GridPane.columnIndex="1" />
+                  <TextField fx:id="orangetextfield" onAction="#orangebutton" prefHeight="27.0" prefWidth="79.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="bananatextfield" onAction="#bananabutton" prefHeight="27.0" prefWidth="79.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="grapetextfield" onAction="#grapebutton" prefHeight="27.0" prefWidth="79.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="bacontextfield" onAction="#baconbutton" prefHeight="27.0" prefWidth="79.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="strawberrytextfield" onAction="#strawberrybutton" prefHeight="27.0" prefWidth="79.0" text="0" GridPane.columnIndex="3" />
+                  <TextField fx:id="blueberrytextfield" onAction="#blueberrybutton" prefHeight="27.0" prefWidth="79.0" text="0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <TextField fx:id="peartextfield" onAction="#pearbutton" prefHeight="27.0" prefWidth="79.0" text="0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <TextField fx:id="lettucetextfiel" onAction="#lettucebutton" prefHeight="27.0" prefWidth="79.0" text="0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+      <Pane prefHeight="200.0" prefWidth="1300.0" style="-fx-background-color: orange;">
+         <children>
+            <ImageView fitHeight="94.0" fitWidth="99.0" layoutX="1040.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../res/Images/user.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="Username_Label" layoutX="1133.0" layoutY="80.0" text="USERNAME" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="1180.0" layoutY="110.0" text="Logout?" textFill="#00bbff">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="localDateTime" graphicTextGap="0.0" layoutX="75.0" layoutY="163.0" text="Fri  Dec 13 2019  00:00 PM" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="30.0" fitWidth="28.0" layoutX="43.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../res/Images/date-to-16.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="44.0" layoutY="7.0" prefHeight="75.0" prefWidth="500.0" text="NEW SALES" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="63.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <GridPane alignment="CENTER" hgap="3.0" layoutX="15.0" layoutY="210.0" prefHeight="350.0" prefWidth="75.0" vgap="3.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button fx:id="Home_Button" alignment="BOTTOM_CENTER" contentDisplay="TOP" graphicTextGap="5.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="50.0" prefWidth="75.0" stylesheets="@../res/styles/homescreen.css" text="HOME" textAlignment="CENTER" wrapText="true">
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="40.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../res/Images/home-48.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Arial" size="10.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+      <Button fx:id="Logout" layoutX="1173.0" layoutY="108.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="28.0" prefWidth="76.0" style="-fx-background-color: transparent;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
