@@ -1,0 +1,13 @@
+String name, String supplier, Number Quantity, Number Threshhold, double pricePerUnit, int ItemID, Number orderQuantity
+Apple,Target,20,10,.75,01,
+Orange,Target,20,10,1.0,02,
+Banana,Target,20,10,.89,03,
+Grape,Target,20,10,2.25,04,
+Strawberry,Target,20,10,2.75,05,
+Blueberry,Target,20,10,2.35,06,
+Pear,Target,20,10,1.75,07,
+Bacon,Target,20,10,2.75,08,
+Lettuce,Target,20,10,1.25,09,
+
+
+
